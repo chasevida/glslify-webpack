@@ -1,0 +1,38 @@
+{
+  "name": "test-babel-plugin-glslify",
+  "version": "0.1.0",
+  "description": "A babel-plugin-glslify example",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "clear": "rm -rf ./dist",
+    "fix": "cp src/utils/glslify-sync-hack-fix.js node_modules/babel-plugin-glslify/lib/glslify-sync-hack.js",
+    "start:es5": "yarn clear && yarn fix && webpack src/glsl-es5.js && serve ./dist",
+    "start:file": "yarn clear && yarn fix && webpack src/glsl-file.js && serve ./dist",
+    "start:inline": "yarn clear && yarn fix && webpack src/glsl-inline.js && serve ./dist",
+    "start:import": "yarn clear && yarn fix && webpack src/glsl-import.js && serve ./dist"
+  },
+  "dependencies": {
+    "brfs": "^1.4.3",
+    "glsl-noise": "^0.0.0",
+    "glslify": "^6.1.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-glslify": "^2.0.0",
+    "babel-preset-env": "^1.6.1",
+    "html-webpack-plugin": "^2.30.1",
+    "ify-loader": "^1.1.0",
+    "raw-loader": "^0.5.1",
+    "webpack": "^3.10.0"
+  },
+  "browserify": {
+    "transform": [
+      "glslify",
+      "brfs"
+    ]
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "name": "glslify-webpack",
+  "version": "0.1.0",
+  "description": "A working example of using GLSLify with Webpack",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "clear": "rm -rf ./babel-plugin-glslify/dist ./glslify-loader/dist ./ify-loader/dist"
+  },
+  "workspaces": [
+    "test-babel-plugin-glslify",
+    "test-glslify-loader",
+    "test-ify-loader"
+  ],
+  "devDependencies": {}
+}

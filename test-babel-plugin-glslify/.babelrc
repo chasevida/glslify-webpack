@@ -1,0 +1,4 @@
+{
+  "plugins": ["glslify"],
+  "presets": ["babel-preset-env"]
+}
