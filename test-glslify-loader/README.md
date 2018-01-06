@@ -22,6 +22,6 @@ The compositions under test here are:
 
 Calling ```glslify`` ```compiles with webpack but does not include and compile any required shader pragma imports. While compiling with webpack no errors are thrown but when viewed in the browser you can see that no additional shaders are transformed.
 
-### 2 File
+### 2. File
 
 Calling `glslify('./glsl/basic.vert')` fails silently. While it compiles with webpack (without errors) you can see when running it in the browser that the file was not required/imported and transformed.
