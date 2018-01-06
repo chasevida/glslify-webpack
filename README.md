@@ -2,7 +2,7 @@
 
 
 
-Ok, so this was slightly confusing. Setting up [glslify](https://github.com/glslify/glslify) with [webpack](https://webpack.js.org/) can be slightly confusing and depending on your setup there can be some unexpected quirks - at least there was for me. While trying to get glslify to play nicely with my webpack setup I ran into several issues and depending on your setup they seem to flip around. So, to get a handle on how to get this all working correctly I stripped everything right back to a bare bones setup and tried a couple of suggested webpack loaders and babel plugins, some of which appear to be out of date and awaiting [fixes](https://github.com/glslify/babel-plugin-glslify/pull/9.). Overall the process hasn't been exactly smooth or encouraging so hopefully this repo helps out the next person who finds themselves struggling.
+Ok, so this was slightly confusing. Setting up [glslify](https://github.com/glslify/glslify) with [webpack](https://webpack.js.org/) can be a little tricky and depending on your setup there can be some unexpected quirks - at least there was for me. While trying to get glslify to play nicely with my webpack config I ran into several issues and depending on your setup they seem to flip around. So, to get a handle on how to get this all working correctly I stripped everything right back to a bare bones setup and tried a couple of suggested webpack loaders and babel plugins, some of which appear to be out of date and awaiting [fixes](https://github.com/glslify/babel-plugin-glslify/pull/9.). Overall the process hasn't been exactly smooth or encouraging so hopefully this repo helps out the next person who finds themselves struggling.
 
 
 
